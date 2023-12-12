@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import com.example.demo.AppButton?>
+
+<AnchorPane maxHeight="600.0" maxWidth="300.0" minHeight="600.0" minWidth="300.0" prefHeight="600.0" prefWidth="300.0" styleClass="background" stylesheets="@app.css" xmlns="http://javafx.com/javafx/20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller">
+  <children>
+    <VBox prefHeight="600.0" prefWidth="300.0">
+      <children>
+        <AnchorPane prefHeight="50.0" styleClass="top-background">
+          <children>
+            <AppButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="5.0">
+              <graphic>
+                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@call.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+              <padding>
+                <Insets left="5.0" right="5.0" />
+              </padding>
+            </AppButton>
+            <AppButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="5.0">
+              <graphic>
+                <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@video.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+              <padding>
+                <Insets left="5.0" right="5.0" />
+              </padding>
+            </AppButton>
+            <ImageView fx:id="profile" disable="true" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="245.0" AnchorPane.topAnchor="5.0">
+              <image>
+                <Image url="@img_profile2.jpg" />
+              </image>
+            </ImageView>
+            <Label layoutX="62.0" layoutY="4.0" text="LT Doanh" textFill="#121212" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="5.0">
+              <font>
+                <Font name="Arial Bold" size="16.0" />
+              </font>
+            </Label>
+            <Label text="Online" textFill="#363333" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="65.0">
+              <font>
+                <Font name="Arial" size="14.0" />
+              </font>
+              <graphic>
+                <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@online.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Label>
+          </children>
+        </AnchorPane>
+        <ScrollPane fx:id="scrollPane" fitToWidth="true" hbarPolicy="NEVER" prefHeight="495.0" prefWidth="300.0" styleClass="scroll-pane" vbarPolicy="AS_NEEDED">
+          <content>
+            <VBox fx:id="chatBox" alignment="TOP_CENTER" maxWidth="290.0" prefWidth="290.0" spacing="2.0" styleClass="chat-box">
+              <padding>
+                <Insets bottom="10.0" left="10.0" right="5.0" top="10.0" />
+              </padding>
+                     <children>
+                        <AnchorPane prefHeight="340.0" prefWidth="275.0">
+                           <children>
+                              <ImageView fx:id="profile_big" fitHeight="80.0" fitWidth="80.0" layoutX="99.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img_profile.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="93.0" layoutY="141.0" text="LT Doanh" textFill="#121212">
+                                 <font>
+                                    <Font name="Arial Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="119.0" layoutY="175.0" text="Profile" textFill="#3b3a3a">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="45.0" layoutY="191.0" text="Học tại Đại học Quốc gia Hà Nội" textFill="#8e8d8d">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="84.0" layoutY="207.0" text="Đến từ Thanh Hóa" textFill="#8e8d8d">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="55.0" layoutY="223.0" text="Sống tại Thành phố Hà Nội" textFill="#8e8d8d">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <AppButton layoutX="118.0" layoutY="248.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0">
+                                 <graphic>
+                                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@profile.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                              </AppButton>
+                              <Label layoutX="110.0" layoutY="290.0" text="User Page">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+            </VBox>
+          </content>
+          <VBox.margin>
+            <Insets top="5.0" />
+          </VBox.margin>
+        </ScrollPane>
+        <AnchorPane layoutX="10.0" layoutY="10.0" minHeight="50.0" prefHeight="50.0" prefWidth="300.0" styleClass="bottom-background">
+          <children>
+            <HBox layoutX="52.0" layoutY="10.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 50;" styleClass="chat-bar" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <TextField fx:id="messageField" prefHeight="40.0" prefWidth="160.0" promptText="Nhập tin nhắn..." style="-fx-background-color: transparent;">
+                  <font>
+                    <Font size="16.0" />
+                  </font>
+                </TextField>
+                <AppButton mnemonicParsing="false" onAction="#handleSendButton" prefHeight="40.0" prefWidth="40.0">
+                  <HBox.margin>
+                    <Insets />
+                  </HBox.margin>
+                  <graphic>
+                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                        <Image url="@send.png" />
+                      </image>
+                    </ImageView>
+                  </graphic>
+                </AppButton>
+              </children>
+            </HBox>
+            <AppButton mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" AnchorPane.leftAnchor="5.0">
+              <graphic>
+                <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@picture.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+              <padding>
+                <Insets left="5.0" right="5.0" />
+              </padding>
+            </AppButton>
+            <AppButton mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" AnchorPane.leftAnchor="50.0">
+              <graphic>
+                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@microphone.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+              <padding>
+                <Insets left="5.0" right="5.0" />
+              </padding>
+            </AppButton>
+          </children>
+          <VBox.margin>
+            <Insets />
+          </VBox.margin>
+        </AnchorPane>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

@@ -1,0 +1,96 @@
+.root {
+  -blue-color: #5788F2;
+  -hover-blue-color: #233ED9;
+
+  -text-color: #555c5d;
+  -hover-text-color: #2e3338;
+}
+
+.top-background {
+  -fx-background-color: linear-gradient(rgba(166, 92, 225, 0.8), rgba(100, 116, 221, 0.8));
+}
+
+.bottom-background {
+  -fx-background-color: linear-gradient(white, rgba(166, 92, 225, 0.2));
+}
+
+.background {
+  -fx-background-color: white;
+}
+
+.message {
+    -fx-text-fill: white;
+    -fx-wrap-text: true;
+    -fx-padding: 5px 10px 5px 10px;
+    -fx-background-color: rgba(126, 66, 213, 0.8);
+    -fx-background-radius: 10;
+    -fx-max-width: 200;
+}
+.sent {
+    -fx-alignment: CENTER_RIGHT;
+    -fx-background-color: transparent;
+}
+.received {
+    -fx-alignment: CENTER_LEFT;
+    -fx-background-color: transparent;
+}
+
+.scroll-pane {
+  -fx-background-color: white;
+  -fx-alignment: center-right;
+  -fx-border-width: 0 0 0 0;
+  -fx-max-width: 300;
+  -fx-max-height: 500;
+}
+.scroll-pane > .viewport {
+  -fx-background-color: white;
+}
+.scroll-pane .scroll-bar:vertical {
+  -fx-background-color: transparent;
+  -fx-background-radius: 0;
+  -fx-padding: 0;
+}
+.scroll-pane .scroll-bar:vertical .track {
+  -fx-background-color: transparent;
+  -fx-border-color: transparent;
+  -fx-background-radius: 0em;
+  -fx-border-radius: 2em;
+}
+.scroll-pane .scroll-bar .increment-arrow,
+.scroll-pane .scroll-bar .decrement-arrow {
+  -fx-background-color: transparent;
+  -fx-padding: -2;
+}
+.scroll-pane .scroll-bar:vertical .thumb {
+  -fx-background-color: derive(black, 80%);
+  -fx-background-insets: 2, 0, 0;
+  -fx-background-radius: 2em;
+}
+
+.chat-box {
+  -fx-background-color: white;
+}
+
+.chat-bar{
+  -fx-background-color: rgba(238, 238, 238, 0.8);
+  -fx-border-width: 0 0 0 0;
+  -fx-background-radius: 50;
+}
+
+.button-custom {
+  -fx-background-color: transparent;
+  -fx-background-radius: 50;
+  -fx-pref-width: 40;
+  -fx-pref-height: 40;
+}
+.button-custom .image-view {
+  -fx-opacity: 0.6;
+  -fx-fit-width: 20;
+  -fx-fit-width: 20;
+}
+.button-custom:hover .image-view {
+  -fx-opacity: 1;
+}
+.button-custom:pressed .image-view {
+  -fx-opacity: 1;
+}
